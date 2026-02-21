@@ -16,3 +16,116 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+.timer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.timer .field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.timer .value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.timer .label {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* Центрування форми */
+.form {
+  max-width: 360px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Поле Delay */
+.form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  gap: 6px;
+}
+
+.form input[type='number'] {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition:
+    border 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form input[type='number']:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+/* Fieldset */
+.form fieldset {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.form legend {
+  padding: 0 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+}
+
+/* Радіокнопки */
+.form fieldset label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+/* Кнопка */
+.form button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #4f46e5;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.form button:hover {
+  background-color: #4338ca;
+}
+
+.form button:active {
+  transform: scale(0.98);
+}
